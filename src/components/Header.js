@@ -5,8 +5,10 @@ import styled from 'styled-components';
 import { Link } from 'gatsby';
 
 const Section = styled.section`
+  background-color: #0c0f38;
   padding: 1rem 1.5rem;
   font-family: ${props => props.theme.primaryFontFamily};
+
   .navbar {
     background-color: transparent;
   }
@@ -24,10 +26,13 @@ const Section = styled.section`
     }
   }
   .navbar-item {
-    font-weight: 700;
-    font-size: 1.2rem;
+    font-weight: 200;
+    font-size: 16px;
+    padding: 0 25px;
+    color: ${props => props.theme.lightShades};
     :hover {
-      color: ${props => props.theme.darkAccent};
+      color: ${props => props.theme.mainBrandColor};
+      background-color: transparent;
     }
   }
   .navbar-burger {
@@ -35,6 +40,27 @@ const Section = styled.section`
     color: #fff;
     opacity: 0.6;
     border-radius: 4px;
+  }
+  .h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.3;
+    color: ${props => props.theme.lightShades};
+  }
+  .para1 {
+    font-size: 2.5rem;
+    line-height: 2;
+    font-weight: 600;
+    color: ${props => props.theme.mainBrandColor};
+  }
+  .columns {
+    margin-top: 3rem;
+  }
+  .para2 {
+    color: ${props => props.theme.lightShades};
+  }
+  .button get put {
+    margin-bottom: 2rem;
   }
 `;
 
@@ -64,11 +90,13 @@ export default class Header extends React.Component {
           <nav
             className="navbar"
             role="navigation"
-            aria-label="main navigation"
-          >
+            aria-label="main navigation">
             <div className="navbar-brand">
               <Link className="navbar-item" to="/">
-                <img src="/images/logo-1024.png" alt="site logo" />
+                <img
+                  src="https://html.design/demo/dataweb/images/logo.png"
+                  alt="site logo"
+                />
               </Link>
               <a
                 href="#"
@@ -81,8 +109,7 @@ export default class Header extends React.Component {
                 aria-label="menu"
                 aria-expanded="false"
                 data-target="navbarBasicExample"
-                onClick={() => this.handleMobileMenu()}
-              >
+                onClick={() => this.handleMobileMenu()}>
                 <span aria-hidden="true" />
                 <span aria-hidden="true" />
                 <span aria-hidden="true" />
@@ -90,7 +117,7 @@ export default class Header extends React.Component {
             </div>
             <div className={isActive ? 'navbar-menu is-active' : 'navbar-menu'}>
               <div className="navbar-end">
-                <Link to="/" className="navbar-item">
+                <Link to="/" className="navbar-item ">
                   Home
                 </Link>
                 <Link to="/about" className="navbar-item">

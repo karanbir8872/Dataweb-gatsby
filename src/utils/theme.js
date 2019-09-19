@@ -2,10 +2,10 @@ import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset-advanced';
 import { darken, lighten } from 'polished';
 
-const mainBrandColor = '#00D1B2';
-const lightShades = '#F5F5F5';
+const mainBrandColor = 'rgb(253,212,48)';
+const lightShades = '#fff';
 const darkAccent = '#3173DC';
-const darkShades = '#0A0A0A';
+const darkShades = '#000';
 
 export const theme = {
   // It can be liberally applied to your layout as its main identity.
@@ -58,24 +58,21 @@ const GlobalStyle = createGlobalStyle`
   .button {
     font-family: ${theme.primaryFontFamily};
   }
-  p {
-    line-height: 1.5rem;
-  }
-  p, .title, .box {
-    color: ${theme.textColor} !important;
+   .title, .box {
+    color: ${theme.lightShades} !important;
   }
   .subtitle {
     color: ${lighten(0.06, theme.textColor)} !important;
   }
-  .button.is-primary {
-    background-color: ${theme.mainBrandColor};
+  .button.is-primary {        
+    background-color: ${theme.mainBrandColor};  
     transition: background-color 0.2s ease;
     :hover {
-      background-color: ${darken(0.06, theme.mainBrandColor)};
+      background-color: ${darken(0.06, theme.lightShades)};
     }
   }
   .button.is-secondary {
-    background-color: ${theme.lightAccent};
+    background-color: ${theme.mainBrandColor};
     transition: background-color 0.2s ease;
     color: #ffffff;
     :hover {
@@ -95,6 +92,32 @@ const GlobalStyle = createGlobalStyle`
   .has-text-warning {
     color: ${theme.lightAccent} !important;
   }
+  .button.get{
+    background-color:${theme.lightShades};
+    width: 50%;
+    border-radius: 0rem;
+    :hover {
+      background-color: ${darken(0.06, theme.darkShades)};
+      color: #ffffff;
+    }
+  }
+  .margin{
+    margin-top:2rem;
+  }
+  .button.colo{
+   background-color:${theme.darkShades};
+  width: 18%;
+  border-radius: 0rem;
+  color: #ffffff;
+}
+@media only screen and (max-width: 400px) {
+  .button.colo {
+    width: 50%;
+  }
+}
+.line{
+  line-height:1.75;
+}
 `;
 
 export default GlobalStyle;
