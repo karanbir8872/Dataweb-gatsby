@@ -130,6 +130,11 @@ const GlobalStyle = createGlobalStyle`
     background-color: #6f42c1;
     color: #ffffff;
   }
+  .tit{
+    color: ${theme.darkShades};
+    font-family: ${theme.primaryFontFamily};
+    font-weight: 700;
+  }
 `;
 
 export default GlobalStyle;

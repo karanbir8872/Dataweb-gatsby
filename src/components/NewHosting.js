@@ -5,16 +5,11 @@ const Section = styled.section`
   .padd {
     padding: 3rem;
   }
-  .git {
-    color: ${props => props.theme.darkShades};
-    font-family: ${props => props.theme.primaryFontFamily};
-    font-weight: bold;
-  }
 `;
 const newhosting = () => (
   <Section className="section">
     <div className="container">
-      <p className="git margin has-text-centered is-size-1">
+      <p className="tit has-text-weight-bold margin has-text-centered is-size-1">
         What’s New In Web Hosting
       </p>
       <div className="columns">
