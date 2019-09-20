@@ -4,6 +4,8 @@ import styled from 'styled-components';
 import Seo from '../components/Seo';
 import NewHosting from '../components/NewHosting';
 import Service from '../components/Service';
+import CardContent from '../components/CardContent';
+import Choose from '../components/Choose';
 import Layout from '../components/Layout';
 
 const Container = styled.div`
@@ -64,6 +66,8 @@ export default class IndexPage extends React.Component {
         </Container>
         <NewHosting />
         <Service />
+        <CardContent />
+        <Choose />
       </Layout>
     );
   }

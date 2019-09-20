@@ -60,9 +60,12 @@ const GlobalStyle = createGlobalStyle`
   }
    .title, .box {
     color: ${theme.lightShades} !important;
+    font-size:20px;
   }
   .subtitle {
-    color: ${lighten(0.06, theme.textColor)} !important;
+    color: ${lighten(0.06, theme.textColorInverse)} !important;
+    font-size:18px;
+    margin-top:1.75rem;
   }
   .button.is-primary {        
     background-color: ${theme.mainBrandColor};  
@@ -118,6 +121,15 @@ const GlobalStyle = createGlobalStyle`
 .line{
   line-height:1.75;
 }
+.button.getted{
+  background-color:${theme.lightShades};
+  border-radius: 0rem;
+  padding-right: 3rem;
+    padding-left: 3rem;
+  :hover {
+    background-color: #6f42c1;
+    color: #ffffff;
+  }
 `;
 
 export default GlobalStyle;
