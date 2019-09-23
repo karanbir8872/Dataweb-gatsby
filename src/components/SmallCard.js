@@ -8,6 +8,22 @@ const Wrapper = styled.div`
     font-weight: 600;
     font-family: ${props => props.theme.primaryFontFamily};
   }
+  .card {
+    border-radius: 20px;
+  }
+  .card:hover {
+  transform: scale(0.75); 
+  }
+  .button.gotted{
+    background-color:${props => props.theme.darkShades};
+    border-radius: 0rem;
+    padding-right: 3rem;
+      padding-left: 3rem;
+      color: #ffffff;
+    :hover {
+      background-color: #6f42c1;
+      color: #ffffff;
+    }
 `;
 const smallcard = props => (
   <Wrapper>
@@ -21,6 +37,9 @@ const smallcard = props => (
           and a search for 'lorem ipsum' will uncover many web sites still
         </p>
       </div>
+    </div>
+    <div className="has-text-centered">
+      <button className="button gotted margin is-size-5 ">READ MORE</button>
     </div>
   </Wrapper>
 );

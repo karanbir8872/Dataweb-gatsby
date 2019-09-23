@@ -7,6 +7,8 @@ import Service from '../components/Service';
 import CardContent from '../components/CardContent';
 import Choose from '../components/Choose';
 import SmallContent from '../components/SmallContent';
+import Form from '../components/Form';
+import Landing from '../components/Landing';
 import Layout from '../components/Layout';
 
 const Container = styled.div`
@@ -59,7 +61,10 @@ export default class IndexPage extends React.Component {
                   </button>
                 </div>
                 <div className="column">
-                  <img src="https://html.design/demo/dataweb/images/img.png" />
+                  <img
+                    src="https://html.design/demo/dataweb/images/img.png"
+                    alt="placeholder"
+                  />
                 </div>
               </div>
             </div>
@@ -70,6 +75,8 @@ export default class IndexPage extends React.Component {
         <CardContent />
         <Choose />
         <SmallContent />
+        <Form />
+        <Landing />
       </Layout>
     );
   }
