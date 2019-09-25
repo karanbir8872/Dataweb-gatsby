@@ -9,6 +9,7 @@ import Choose from '../components/Choose';
 import SmallContent from '../components/SmallContent';
 import Form from '../components/Form';
 import Landing from '../components/Landing';
+import Footer from '../components/Footer';
 import Layout from '../components/Layout';
 
 const Container = styled.div`
@@ -77,6 +78,7 @@ export default class IndexPage extends React.Component {
         <SmallContent />
         <Form />
         <Landing />
+        <Footer />
       </Layout>
     );
   }
