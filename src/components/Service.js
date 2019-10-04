@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Service = styled.div`
+const Scale = styled.div`
   background-color: #0c0f38;
   padding: 3rem;
   margin-top: 2rem;
@@ -10,7 +10,7 @@ const Service = styled.div`
   }
 `;
 const Service = () => (
-  <Service>
+  <Scale>
     <div className="columns">
       <div className="column is-half is-offset-one-quarter">
         <p className=" text title is-size-1 has-text-centered">Best Service</p>
@@ -20,6 +20,6 @@ const Service = () => (
         </p>
       </div>
     </div>
-  </Service>
+  </Scale>
 );
 export default Service;
