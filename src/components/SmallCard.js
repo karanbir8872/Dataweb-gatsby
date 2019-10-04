@@ -25,7 +25,7 @@ const Wrapper = styled.div`
       color: #ffffff;
     }
 `;
-const smallcard = props => (
+const SmallCard = props => (
   <Wrapper>
     <div className="card">
       <div className="card-content  has-text-centered">
@@ -43,4 +43,4 @@ const smallcard = props => (
     </div>
   </Wrapper>
 );
-export default smallcard;
+export default SmallCard;

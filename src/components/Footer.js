@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Wrapper = styled.div``;
-const footer = () => (
+const Footer = () => (
   <Wrapper>
     <footer className="footer">
       <div className="content has-text-centered">
@@ -11,4 +11,4 @@ const footer = () => (
     </footer>
   </Wrapper>
 );
-export default footer;
+export default Footer;

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import SmallCard from './SmallCard';
 
 const Section = styled.div``;
-const smallcontent = () => (
+const SmallContent = () => (
   <Section className="section">
     <div className="container">
       <div className="columns is-multiline">
@@ -29,4 +29,4 @@ const smallcontent = () => (
     </div>
   </Section>
 );
-export default smallcontent;
+export default SmallContent;

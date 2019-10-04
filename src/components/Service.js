@@ -9,7 +9,7 @@ const Service = styled.div`
     color: ${props => props.theme.lightShades};
   }
 `;
-const service = () => (
+const Service = () => (
   <Service>
     <div className="columns">
       <div className="column is-half is-offset-one-quarter">
@@ -22,4 +22,4 @@ const service = () => (
     </div>
   </Service>
 );
-export default service;
+export default Service;

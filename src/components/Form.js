@@ -15,7 +15,7 @@ const Section = styled.div`
   }
 `;
 
-const form = () => (
+const Form = () => (
   <Section className="section">
     <div className="container">
       <div className="columns">
@@ -64,4 +64,4 @@ is-offset-one-quarter has-text-centered"
     </div>
   </Section>
 );
-export default form;
+export default Form;

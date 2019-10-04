@@ -22,7 +22,7 @@ const Wrapper = styled.div`
     font-size: 19px;
   }
 `;
-const card = props => (
+const Card = props => (
   <Wrapper>
     <div className="box">
       <div className="card-content  line has-text-centered">
@@ -36,4 +36,4 @@ const card = props => (
     </div>
   </Wrapper>
 );
-export default card;
+export default Card;

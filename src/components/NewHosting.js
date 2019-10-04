@@ -6,7 +6,7 @@ const Section = styled.section`
     padding: 3rem;
   }
 `;
-const newhosting = () => (
+const NewHosting = () => (
   <Section className="section">
     <div className="container">
       <p className="tit has-text-weight-bold margin has-text-centered is-size-1">
@@ -32,4 +32,4 @@ const newhosting = () => (
     </div>
   </Section>
 );
-export default newhosting;
+export default NewHosting;

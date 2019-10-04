@@ -10,7 +10,7 @@ const Style = styled.div`
 }
 }
 `;
-const choose = () => (
+const Choose = () => (
   <Style>
     <div className="section">
       <div className="container">
@@ -18,7 +18,6 @@ const choose = () => (
           Why you should choose
         </p>
         <p className=" look has-text-centered">
-          {' '}
           making it look like readable English. Many desktop publishing packages
           and web page editors now use Lorem Ipsum as their default model text,
           and a search for 'lorem ipsum' will uncover many web sites still.
@@ -27,4 +26,4 @@ const choose = () => (
     </div>
   </Style>
 );
-export default choose;
+export default Choose;

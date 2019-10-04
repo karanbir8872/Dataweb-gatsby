@@ -12,7 +12,7 @@ const Wrapper = styled.div`
       padding-top: 17rem;
   }
 `;
-const landing = () => (
+const Landing = () => (
   <Wrapper>
     <div className="columns">
       <div className="column bit is-half is-offset-one-quarter">
@@ -31,4 +31,4 @@ const landing = () => (
     </div>
   </Wrapper>
 );
-export default landing;
+export default Landing;

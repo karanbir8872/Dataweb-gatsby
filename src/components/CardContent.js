@@ -5,7 +5,7 @@ import Card from './card';
 const Section = styled.div`
   background-color: #0c0f38;
 `;
-const cardcontent = () => (
+const CardContent = () => (
   <Section className="section">
     <div className="container">
       <div className="columns is-multiline">
@@ -52,4 +52,4 @@ const cardcontent = () => (
     </div>
   </Section>
 );
-export default cardcontent;
+export default CardContent;
