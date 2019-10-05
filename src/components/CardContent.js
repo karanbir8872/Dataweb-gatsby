@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Card from './card';
+import Card from './Card';
 
 const Section = styled.div`
   background-color: #0c0f38;
