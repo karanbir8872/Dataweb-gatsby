@@ -4,6 +4,8 @@ import styled from 'styled-components';
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
 import NewsItem from '../components/NewsItem';
+import Form from '../components/Form';
+import Landing from '../components/Landing';
 
 const Container = styled.div`
   margin-top: 4rem;
@@ -30,6 +32,8 @@ const NewsUpdates = ({ data }) => {
           </div>
         </Container>
       </section>
+      <Form />
+    <Landing />
     </Layout>
   );
 };

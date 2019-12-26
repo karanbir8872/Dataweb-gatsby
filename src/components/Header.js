@@ -120,16 +120,16 @@ export default class Header extends React.Component {
                 <Link to="/" className="navbar-item ">
                   Home
                 </Link>
-                <Link to="/about" className="navbar-item">
+                <Link to="/Feature" className="navbar-item">
                   About
                 </Link>
                 <Link to="/contact" className="navbar-item">
                   Services
                 </Link>
-                <Link to="/news" className="navbar-item">
+                <Link to="/LastPage" className="navbar-item">
                   Contact
                 </Link>
-                <Link to="/contact" className="navbar-item">
+                <Link to="/" className="navbar-item">
                   Sign Up
                 </Link>
               </div>
