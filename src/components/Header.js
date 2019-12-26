@@ -34,6 +34,10 @@ const Section = styled.section`
       color: ${props => props.theme.mainBrandColor};
       background-color: transparent;
     }
+    @media only screen and (max-width: 600px) {
+       {
+        color: black;
+      }
   }
   .navbar-burger {
     background-color: #1c1323;
