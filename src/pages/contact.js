@@ -113,6 +113,230 @@ const Contact = () => (
             eiusmod tempor incididunt.
           </p>
         </div>
+        <div className="columns main is-centered is-variable is-8">
+          <div className="column is-half">
+            {' '}
+            <div className="card">
+              <div className="card-header">
+                <div className="media">
+                  <div className="media-left">
+                    <figure className="image image is-128x128">
+                      <img
+                        className="is-rounded imageas"
+                        src="https://colorlib.com/preview/theme/hami/img/bg-img/6.jpg"
+                        alt="Placeholder image"
+                      />
+                    </figure>
+                  </div>
+                  <div className="media-content">
+                    <p className="mark has-text-black is-4">Mark Anderson</p>
+                    <p className="anderson has-text-info is-6">Chief Executive Officer</p>
+                    <p className="web is-6">
+                      Lorem Ipsum which looks reasonable generated as default
+                      model as and search many web sites pass websites.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="column is-half">
+          <div className="card">
+              <div className="card-header">
+                <div className="media">
+                  <div className="media-left">
+                    <figure className="image image is-128x128">
+                      <img
+                        className="is-rounded imageas"
+                        src="https://colorlib.com/preview/theme/hami/img/bg-img/7.jpg"
+                        alt="Placeholder image"
+                      />
+                    </figure>
+                  </div>
+                  <div className="media-content">
+                    <p className="mark has-text-black is-4">Jason Curry</p>
+                    <p className="anderson has-text-info is-6">Support Representative</p>
+                    <p className="web is-6">
+                      Lorem Ipsum which looks reasonable generated as default
+                      model as and search many web sites pass websites.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="columns main is-centered is-variable is-8">
+          <div className="column is-half">
+            {' '}
+            <div className="card">
+              <div className="card-header">
+                <div className="media">
+                  <div className="media-left">
+                    <figure className="image image is-128x128">
+                      <img
+                        className="is-rounded imageas"
+                        src="https://colorlib.com/preview/theme/hami/img/bg-img/8.jpg"
+                        alt="Placeholder image"
+                      />
+                    </figure>
+                  </div>
+                  <div className="media-content">
+                    <p className="mark has-text-black is-4">Ricardo Coleman</p>
+                    <p className="anderson has-text-info is-6">Software Engineer</p>
+                    <p className="web is-6">
+                      Lorem Ipsum which looks reasonable generated as default
+                      model as and search many web sites pass websites.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="column is-half">
+          <div className="card">
+              <div className="card-header">
+                <div className="media">
+                  <div className="media-left">
+                    <figure className="image image is-128x128">
+                      <img
+                        className="is-rounded imageas"
+                        src="https://colorlib.com/preview/theme/hami/img/bg-img/9.jpg"
+                        alt="Placeholder image"
+                      />
+                    </figure>
+                  </div>
+                  <div className="media-content">
+                    <p className="mark has-text-black is-4">Lola Gill</p>
+                    <p className="anderson has-text-info is-6">Product Director</p>
+                    <p className="web is-6">
+                      Lorem Ipsum which looks reasonable generated as default
+                      model as and search many web sites pass websites.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="maincontent">
+          <p className="tit has-text-weight-bold margin has-text-centered is-size-1">
+          What Clients Say?
+          </p>
+          <p className="padd line has-text-centered is-size-4">
+          Our extensive expertise will make sure that yours is a SUCCESS STORY once again!
+          </p>
+        </div>
+        <div class="columns iner">
+  <div class="column">
+  <div className="card">
+  <div className="card-content">
+      <span className="icon has-text-warning">
+              <i className="fas fa-star" />
+            </span>
+            <span className="icon has-text-warning">
+              <i className="fas fa-star" />
+            </span>
+            <span className="icon has-text-warning">
+              <i className="fas fa-star" />
+            </span>
+            <span className="icon has-text-warning">
+              <i className="fas fa-star" />
+            </span>
+            <span className="icon has-text-warning">
+              <i className="fas fa-star" />
+            </span>
+            <span className="icon has-text-warning">
+              <i className="fas fa-star" />
+            </span>
+    <p className="tle">
+    By switching to Hami Anycast DNS system we were able to decrease the worldwide app latency immensely.
+    </p>
+  </div>
+</div>
+  </div>
+  <div class="column">
+  <div className="card">
+  <div className="card-content">
+  <span className="icon has-text-warning">
+              <i className="fas fa-star" />
+            </span>
+            <span className="icon has-text-warning">
+              <i className="fas fa-star" />
+            </span>
+            <span className="icon has-text-warning">
+              <i className="fas fa-star" />
+            </span>
+            <span className="icon has-text-warning">
+              <i className="fas fa-star" />
+            </span>
+            <span className="icon has-text-warning">
+              <i className="fas fa-star" />
+            </span>
+            <span className="icon has-text-warning">
+              <i className="fas fa-star" />
+            </span>
+    <p className="tle">
+    By switching to Hami Anycast DNS system we were able to decrease the worldwide app latency immensely.
+    </p>
+  </div>
+</div>
+  </div>
+  <div class="column">
+  <div className="card">
+  <div className="card-content">
+  <span className="icon has-text-warning">
+              <i className="fas fa-star" />
+            </span>
+            <span className="icon has-text-warning">
+              <i className="fas fa-star" />
+            </span>
+            <span className="icon has-text-warning">
+              <i className="fas fa-star" />
+            </span>
+            <span className="icon has-text-warning">
+              <i className="fas fa-star" />
+            </span>
+            <span className="icon has-text-warning">
+              <i className="fas fa-star" />
+            </span>
+            <span className="icon has-text-warning">
+              <i className="fas fa-star" />
+            </span>
+    <p className="tle">
+    By switching to Hami Anycast DNS system we were able to decrease the worldwide app latency immensely.
+    </p>
+  </div>
+</div>
+  </div>
+  <div class="column">
+  <div className="card">
+  <div className="card-content">
+  <span className="icon has-text-warning">
+              <i className="fas fa-star" />
+            </span>
+            <span className="icon has-text-warning">
+              <i className="fas fa-star" />
+            </span>
+            <span className="icon has-text-warning">
+              <i className="fas fa-star" />
+            </span>
+            <span className="icon has-text-warning">
+              <i className="fas fa-star" />
+            </span>
+            <span className="icon has-text-warning">
+              <i className="fas fa-star" />
+            </span>
+            <span className="icon has-text-warning">
+              <i className="fas fa-star" />
+            </span>
+    <p className="tle">
+    By switching to Hami Anycast DNS system we were able to decrease the worldwide app latency immensely.
+    </p>
+  </div>
+</div>
+  </div>
+</div>
       </div>
     </Section>
   </Layout>
