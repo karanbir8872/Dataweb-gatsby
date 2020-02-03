@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import { graphql } from 'gatsby';
 import Seo from '../components/Seo';
 import NewHosting from '../components/NewHosting';
 import Service from '../components/Service';
@@ -12,6 +12,29 @@ import Landing from '../components/Landing';
 import Footer from '../components/Footer';
 import Layout from '../components/Layout';
 
+export const indexQuery = graphql`
+  query indexQuery {
+    contentfulIndex {
+      title
+      subtitle
+      description
+      titleTwo
+      descriptionTwo {
+        descriptionTwo
+      }
+      pik {
+        file {
+          url
+        }
+      }
+      phototwo {
+        file {
+          url
+        }
+      }
+    }
+  }
+`;
 const Container = styled.div`
   background-color: #0c0f38;
   margin-top: -6rem;
@@ -41,6 +64,9 @@ const Container = styled.div`
 
 export default class IndexPage extends React.Component {
   render() {
+    const {
+      data: { contentfulIndex: page },
+    } = this.props;
     return (
       <Layout>
         <Seo title="Home" description="Welcome to GatsbyJs v1" />
@@ -49,29 +75,25 @@ export default class IndexPage extends React.Component {
             <div className="container">
               <div className="columns">
                 <div className="column is-two-fifths has-text-left">
-                  <h1 className="h1">Power ful</h1>
-                  <h1 className="h1">Web Hosting</h1>
-                  <h1 className="para1">Landing Page 2019</h1>
-                  <p className="para2">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud
-                  </p>
+                  <h1 className="h1">{page.title}</h1>
+                  <h1 className="para1">{page.subtitle}</h1>
+                  <p className="para2">{page.description}</p>
                   <button className="button get margin is-size-5">
                     GET STARTED
                   </button>
                 </div>
                 <div className="column">
-                  <img
-                    src="https://html.design/demo/dataweb/images/img.png"
-                    alt="placeholder"
-                  />
+                  <img src={page.pik.file.url} alt="placeholder" />
                 </div>
               </div>
             </div>
           </div>
         </Container>
-        <NewHosting />
+        <NewHosting
+          titleTwo={page.titleTwo}
+          PhotoTwo={page.phototwo.file.url}
+          descritionTwo={page.descriptionTwo.descriptionTwo}
+        />
         <Service />
         <CardContent />
         <Choose />

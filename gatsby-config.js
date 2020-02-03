@@ -26,6 +26,15 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `84aujgy4hv2v`,
+        // Learn about environment variables: https://gatsby.dev/env-vars
+        accessToken: 'dPsMzkK4CukS23qdOHt1XQmOoPCltTDd0cUQCtKl-bw',
+        host: `preview.contentful.com`,
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `posts`,
